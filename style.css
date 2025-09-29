@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #d2691e;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+/* Menu Section */
+#menu {
+  flex: 1 1 45%;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #fffaf0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d2691e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-card button:hover {
+  background-color: #b45a0c;
+}
+
+/* Order Section */
+#order {
+  flex: 1 1 40%;
+  background-color: #fffaf0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#order-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+#order-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+#order p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#checkout {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #d2691e;
+  color: white;
+  margin-top: 30px;
+}
